@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from '../views/Home/Home.jsx';
+import { HomeExample } from '../views/HomeExample/HomeExample.jsx';
 
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<HomeExample />} />
     </Routes>
   );
 }
