@@ -9,19 +9,8 @@ export const runMockServer = async () => {
   const { handlers } = await import('./handlers');
 
   const server = setupWorker(...handlers);
-  const muteWarnPatterns = ['chrome-extension'];
 
   return server.start({
-    onUnhandledRequest(request, print) {
-      if (
-        muteWarnPatterns.some((muteWarnPattern) =>
-          request.url.includes(muteWarnPattern)
-        )
-      ) {
-        return;
-      }
-
-      print.warning();
-    },
+    onUnhandledRequest: 'bypass',
   });
 };
