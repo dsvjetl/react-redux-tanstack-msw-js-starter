@@ -10,7 +10,7 @@ const HomeExample = () => {
       <span>Loading posts...</span>
     ) : (
       <div>
-        <h3>{isMock ? 'Mock data: ' : 'Fetched data:'}</h3>
+        <h3>{isMock ? 'Mock data:' : 'Fetched data:'}</h3>
         <ul>
           {posts.map((post) => (
             <li key={post.id}>{post.title}</li>
