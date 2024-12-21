@@ -1,23 +1,12 @@
 import styles from './HomeExample.module.scss';
 import { usePosts } from './hooks/usePosts.js';
-import { isMock } from '../../shared/utils/isMock.js';
+import { Posts } from './components/Posts/Posts.jsx';
 
 const HomeExample = () => {
   const { data: posts, isLoading } = usePosts();
 
   const renderPosts = () => {
-    return isLoading ? (
-      <span>Loading posts...</span>
-    ) : (
-      <div>
-        <h3>{isMock ? 'Mock data:' : 'Fetched data:'}</h3>
-        <ul>
-          {posts.map((post) => (
-            <li key={post.id}>{post.title}</li>
-          ))}
-        </ul>
-      </div>
-    );
+    return isLoading ? <span>Loading posts...</span> : <Posts posts={posts} />;
   };
 
   return (
