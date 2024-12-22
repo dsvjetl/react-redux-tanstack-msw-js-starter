@@ -1,4 +1,4 @@
-# React [Redux / Tanstack/React Query / Mock Service Worker] JavaScript Starter/Boilerplate
+# React [Redux / Tanstack Query / Mock Service Worker] JavaScript Starter/Boilerplate
 
 ## Overview
 
