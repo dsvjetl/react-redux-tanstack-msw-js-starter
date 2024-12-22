@@ -8,8 +8,8 @@ and production builds.
 
 ## Requirements
 
-- **Node.js** ~ ^v23.x.x
-- **NPM** ~ ^v10.x.x
+- **Node.js** ~ v23.x.x
+- **NPM** ~ v10.x.x
 
 ## Features
 
