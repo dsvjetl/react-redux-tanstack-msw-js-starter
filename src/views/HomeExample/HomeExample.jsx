@@ -1,6 +1,6 @@
 import styles from './HomeExample.module.scss';
 import { usePosts } from './hooks/usePosts';
-import { Posts } from './components/Posts';
+import { Posts } from './components/Posts/index.js';
 
 const HomeExample = () => {
   const { data: posts, isLoading } = usePosts();

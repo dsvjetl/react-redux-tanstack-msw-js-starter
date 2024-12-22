@@ -10,7 +10,17 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write './src/**/*.{js,jsx}'",
-    "plop": "plop"
+    "plop": "plop",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
@@ -37,7 +47,9 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.13.0",
+    "husky": "^9.1.7",
     "inquirer-directory": "^2.2.0",
+    "lint-staged": "^15.2.11",
     "msw": "^2.7.0",
     "plop": "^4.0.1",
     "prettier": "^3.4.2",
