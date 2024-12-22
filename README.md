@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project is built using **React 18.3.1** and leverages several popular JavaScript libraries and tools to create a modern, fast, and scalable front-end application. The project uses **Vite** as its build tool for optimized development and production builds.
+This project is built using **React 18.3.1** and leverages several popular JavaScript libraries and tools to create a
+modern, fast, and scalable front-end application. The project uses **Vite** as its build tool for optimized development
+and production builds.
 
 ## Requirements
 
@@ -18,6 +20,7 @@ This project is built using **React 18.3.1** and leverages several popular JavaS
 - **Eslint** and **Prettier** for maintaining code quality and style consistency.
 - **SASS Embedded** for advanced styling capabilities.
 - Mocking with **MSW** (Mock Service Worker).
+- **Husky** for Git hook management.
 
 ## Installation
 
@@ -25,24 +28,30 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/dsvjetl/react-redux-tanstack-msw-js-starter <new_project_name>
-    cd <new_project_name>
-    ```
+   ```bash
+   git clone https://github.com/dsvjetl/react-redux-tanstack-msw-js-starter <new_project_name>
+   cd <new_project_name>
+   ```
 
 2. Install dependencies using `npm`:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
-3. Start the development server:
+3. Set up Husky hooks:
 
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run prepare
+   ```
 
-4. Open the project in your browser at `http://localhost:5173` (default port for Vite).
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the project in your browser at `http://localhost:5173` (default port for Vite).
 
 ## Project Structure
 
@@ -70,53 +79,55 @@ Below are the standard scripts defined in the `package.json`:
 
 - **Start the development server:**
 
-    ```bash
-    npm run dev
-    ```
+  ```bash
+  npm run dev
+  ```
+
 - **Start the mock (MSW) server:**
 
-    ```bash
-    npm run dev:mock
-    ```
+  ```bash
+  npm run dev:mock
+  ```
 
 - **Create production build:**
 
-    ```bash
-    npm run build
-    ```
+  ```bash
+  npm run build
+  ```
 
 - **Preview production build locally:**
 
-    ```bash
-    npm run preview
-    ```
+  ```bash
+  npm run preview
+  ```
 
 - **Lint the project:**
 
-    ```bash
-    npm run lint
-    ```
+  ```bash
+  npm run lint
+  ```
 
 - **Format the project:**
 
-    ```bash
-    npm run format
-    ```
+  ```bash
+  npm run format
+  ```
 
 ## Libraries and Tools
 
-| Library/Tool              | Version     | Use Case                                  |
-|---------------------------|-------------|-------------------------------------------|
-| **React**                 | 18.3.1      | UI Rendering                              |
-| **React Redux**           | 9.2.0       | State management                          |
-| **React Router DOM**      | 7.0.2       | Client-side routing                       |
-| **Axios**                 | 1.7.9       | HTTP requests                             |
-| **React Query**           | 5.62.8      | Server state management                   |
-| **Eslint**                | 8.57.1      | Error prevention and code standardization |
-| **Prettier**              | 3.4.2       | Code formatting                           |
-| **SASS Embedded**         | 1.83.0      | Advanced CSS styling                      |
-| **Mock Service Worker**   | 2.7.0       | API data mocking for testing              |
-| **Vite**                  | 6.0.3       | Lightning-fast development build tool     |
+| Library/Tool            | Version | Use Case                                  |
+| ----------------------- | ------- | ----------------------------------------- |
+| **React**               | 18.3.1  | UI Rendering                              |
+| **React Redux**         | 9.2.0   | State management                          |
+| **React Router DOM**    | 7.0.2   | Client-side routing                       |
+| **Axios**               | 1.7.9   | HTTP requests                             |
+| **React Query**         | 5.62.8  | Server state management                   |
+| **Eslint**              | 8.57.1  | Error prevention and code standardization |
+| **Prettier**            | 3.4.2   | Code formatting                           |
+| **SASS Embedded**       | 1.83.0  | Advanced CSS styling                      |
+| **Mock Service Worker** | 2.7.0   | API data mocking for testing              |
+| **Husky**               | 9.1.7   | Git hook management                       |
+| **Vite**                | 6.0.3   | Lightning-fast development build tool     |
 
 For a complete list of dependencies, check the `package.json` file.
 
@@ -130,7 +141,8 @@ Run the linting script to check for code issues:
 npm run lint
 ```
 
-Prettier is configured to auto-format code on save using your IDE. Ensure that your development setup supports Prettier auto-formatting.
+Prettier is configured to auto-format code on save using your IDE. Ensure that your development setup supports Prettier
+auto-formatting.
 
 ### Adding New Features
 
@@ -144,7 +156,8 @@ Follow the prompts to auto-generate boilerplate files for the React components.
 
 ### Mocking Data with MSW
 
-This project uses **Mock Service Worker (MSW)** to mock API endpoints during development and testing. MSW ensures controlled responses and prevents dependency on actual backend services.
+This project uses **Mock Service Worker (MSW)** to mock API endpoints during development and testing. MSW ensures
+controlled responses and prevents dependency on actual backend services.
 See the `src/views/HomeExample/mocks/postsMock.js` as an example.
 
 ```bash
