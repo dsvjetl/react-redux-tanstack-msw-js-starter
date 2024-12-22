@@ -1,5 +1,6 @@
-import { isMock } from '../../../../shared/utils/isMock.js';
+import { isMock } from '../../../../shared/utils/isMock';
 import PropTypes from 'prop-types';
+import { Post } from '../Post';
 
 const Posts = ({ posts }) => {
   return (
@@ -7,7 +8,7 @@ const Posts = ({ posts }) => {
       <h3>{isMock ? 'Mocked data:' : 'Fetched XHR data:'}</h3>
       <ul>
         {posts.map((post) => (
-          <li key={post.id}>{post.title}</li>
+          <Post key={post.id} text={post.title} />
         ))}
       </ul>
     </div>
@@ -21,8 +22,8 @@ Posts.propTypes = {
       userId: PropTypes.number,
       title: PropTypes.string,
       body: PropTypes.string,
-    }).isRequired
+    }).isRequired,
   ),
 };
 
-export { Posts };
+export default Posts;

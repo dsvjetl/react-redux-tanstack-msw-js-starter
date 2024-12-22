@@ -5,6 +5,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import prettier from 'eslint-plugin-prettier';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+import importPlugin from 'eslint-plugin-import';
 
 export default [
   { ignores: ['dist'] },
@@ -19,13 +20,13 @@ export default [
         sourceType: 'module',
       },
     },
-    settings: { react: { version: '18.3' } },
     plugins: {
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       prettier,
       'jsx-a11y': jsxA11y,
+      import: importPlugin,
     },
     rules: {
       ...js.configs.recommended.rules,
@@ -39,6 +40,24 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'import/extensions': [
+        'error',
+        'ignorePackages',
+        {
+          js: 'never',
+          jsx: 'never',
+          ts: 'never',
+          tsx: 'never',
+        },
+      ],
+    },
+    settings: {
+      react: { version: '18.3' },
+      'import/resolver': {
+        node: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        },
+      },
     },
   },
 ];

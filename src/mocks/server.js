@@ -1,6 +1,6 @@
-import { isMock } from '../shared/utils/isMock.js';
+import { isMock } from '../shared/utils/isMock';
 
-export const runMockServer = async () => {
+const runMockServer = async () => {
   if (!isMock) {
     return;
   }
@@ -14,3 +14,5 @@ export const runMockServer = async () => {
     onUnhandledRequest: 'bypass',
   });
 };
+
+export { runMockServer };

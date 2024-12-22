@@ -1,6 +1,6 @@
 import styles from './HomeExample.module.scss';
-import { usePosts } from './hooks/usePosts.js';
-import { Posts } from './components/Posts/Posts.jsx';
+import { usePosts } from './hooks/usePosts';
+import { Posts } from './components/Posts';
 
 const HomeExample = () => {
   const { data: posts, isLoading } = usePosts();
@@ -17,4 +17,4 @@ const HomeExample = () => {
   );
 };
 
-export { HomeExample };
+export default HomeExample;

@@ -1,6 +1,6 @@
 import { delay, http, HttpResponse } from 'msw';
-import { postsMock } from '../mocks/postsMock.js';
-import { getApiBaseUrl } from '../../../shared/utils/getApiBaseUrl.js';
+import { postsMock } from '../mocks/postsMock';
+import { getApiBaseUrl } from '../../../shared/utils/getApiBaseUrl';
 
 const createApiMockHandler = () => {
   return [

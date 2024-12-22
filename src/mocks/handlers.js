@@ -1,4 +1,4 @@
-import { createApiMockHandler } from '../views/HomeExample/utils/createApiMockHandler.js';
+import { createApiMockHandler } from '../views/HomeExample/utils/createApiMockHandler';
 
 const handlers = [...createApiMockHandler()];
 

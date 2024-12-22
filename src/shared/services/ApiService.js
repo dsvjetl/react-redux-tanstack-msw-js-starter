@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { getApiBaseUrl } from '../utils/getApiBaseUrl.js';
+import { getApiBaseUrl } from '../utils/getApiBaseUrl';
 
 class ApiService {
   constructor() {
@@ -23,7 +23,7 @@ class ApiService {
       (error) => {
         // Handle request error
         return Promise.reject(error);
-      }
+      },
     );
 
     // Add a response interceptor
@@ -40,7 +40,7 @@ class ApiService {
           console.error('Network Error: ', error.message);
         }
         return Promise.reject(error);
-      }
+      },
     );
   }
 

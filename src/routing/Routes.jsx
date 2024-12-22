@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { HomeExample } from '../views/HomeExample/HomeExample.jsx';
+import { HomeExample } from '../views/HomeExample';
 
 export default function AppRoutes() {
   return (

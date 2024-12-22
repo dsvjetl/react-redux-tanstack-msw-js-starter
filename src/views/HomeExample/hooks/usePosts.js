@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import { queryKeys } from '../constants/queryKeys.js';
-import { fetchPosts } from '../services/postApiServices.js';
+import { queryKeys } from '../constants/queryKeys';
+import { fetchPosts } from '../services/postApiServices';
 
 const usePosts = () =>
   useQuery({
