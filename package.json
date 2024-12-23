@@ -8,12 +8,12 @@
     "dev:mock": "VITE_API_MOCK=true vite",
     "build": "vite build",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "format": "prettier --write './src/**/*.{js,jsx}'",
-    "plop": "plop",
+    "generate": "plop",
     "prepare": "husky",
-    "depcheck": "depcheck",
-    "knip": "knip"
+    "scan:deadcode": "knip"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -41,7 +41,6 @@
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.17",
     "@vitejs/plugin-react": "^4.3.4",
-    "depcheck": "^1.4.7",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
