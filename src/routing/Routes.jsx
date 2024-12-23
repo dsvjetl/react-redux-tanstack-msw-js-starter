@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { HomeExample } from '../views/HomeExample/HomeExample';
+import { HomeExample } from '../views/HomeExample';
 import { routePaths } from './';
 
 const AppRoutes = () => {
