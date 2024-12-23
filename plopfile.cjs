@@ -34,6 +34,13 @@ module.exports = function (plop) {
         path: currentPath + '/components/{{pascalCase name}}/index.js',
         templateFile: 'plop-templates/index.js.hbs',
       },
+      {
+        type: 'add',
+        path:
+          currentPath +
+          '/components/{{pascalCase name}}/{{pascalCase name}}.test.jsx',
+        templateFile: 'plop-templates/Component.test.js.hbs',
+      },
     ],
   });
 };

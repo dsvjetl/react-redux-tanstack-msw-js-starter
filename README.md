@@ -22,6 +22,8 @@ and production builds.
 - Mocking with **MSW** (Mock Service Worker).
 - **Husky** for Git hook management.
 - **Knip** for dependency analysis and dead code detection.
+- **Vitest** for testing and test-driven development.
+- **Plop.js** for component and file scaffolding.
 
 ## Installation
 
@@ -71,7 +73,8 @@ To set up the project locally, follow these steps:
 ├── .eslintrc.json      # ESLint configuration
 ├── prettier.config.js  # Prettier configuration
 ├── README.md           # Documentation
-└── vite.config.js      # Vite configuration
+├── vite.config.js      # Vite configuration
+└── vitest.config.ts    # Vitest configuration
 ...
 ```
 
@@ -103,7 +106,19 @@ Below are the standard scripts defined in the `package.json`:
   npm run preview
   ```
 
-- **Lint the project:**
+- **Run unit and integration tests:**
+
+  ```bash
+  npm run test
+  ```
+
+- **Run tests with the Vitest UI:**
+
+  ```bash
+  npm run test:ui
+  ```
+
+- **Run linting checks:**
 
   ```bash
   npm run lint
@@ -137,6 +152,8 @@ Below are the standard scripts defined in the `package.json`:
 | **Husky**               | 9.1.7   | Git hook management                       |
 | **Knip**                | 5.41.1  | Dependency analysis and dead code check   |
 | **Vite**                | 6.0.3   | Lightning-fast development build tool     |
+| **Vitest**              | 2.1.8   | Unit testing                              |
+| **Plop.js**             | 4.0.1   | Scaffolding tool for React components     |
 
 For a complete list of dependencies, check the `package.json` file.
 
@@ -158,10 +175,26 @@ auto-formatting.
 This project utilizes **Plop.js** to scaffold components. To create a new component, run:
 
 ```bash
-npm run plop
+npm run generate
 ```
 
 Follow the prompts to auto-generate boilerplate files for the React components.
+
+### Running Tests
+
+Use **Vitest** to run tests for your components or business logic:
+
+- Run all tests:
+
+  ```bash
+  npm run test
+  ```
+
+- Run the Vitest UI for an interactive testing experience:
+
+  ```bash
+  npm run test:ui
+  ```
 
 ### Dependency Analysis with Knip.js
 
