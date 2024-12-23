@@ -1,6 +1,7 @@
 import styles from './HomeExample.module.scss';
 import { usePosts } from './hooks/usePosts';
 import { Posts } from './components/Posts';
+import { Todos } from './components/Todos';
 
 const HomeExample = () => {
   const { data: posts, isLoading } = usePosts();
@@ -10,10 +11,13 @@ const HomeExample = () => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <>
       <h1>dsvjetl React Starter</h1>
-      {renderPosts()}
-    </div>
+      <div className={styles.wrapper}>
+        {renderPosts()}
+        <Todos />
+      </div>
+    </>
   );
 };
 

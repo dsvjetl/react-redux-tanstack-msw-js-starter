@@ -1,12 +1,30 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+const excludeFiles = [
+  'node_modules',
+  'dist',
+  'coverage',
+  'plop-templates',
+  'public',
+  '.husky',
+  'src/assets',
+  'src/mocks',
+  'src/store',
+  '**/index.js',
+];
+
 export default defineConfig({
   plugins: [react()],
   test: {
-    globals: true, // Enable globals like `describe` and `it`
-    environment: 'jsdom', // Vitest's JSDOM environment for components
-    setupFiles: './vitest.setup.js', // Optional, if you need further setup
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './vitest.setup.js',
+    include: ['src/**/*.test.{js,ts,jsx,tsx}'],
+    exclude: [...excludeFiles],
+    coverage: {
+      include: ['src/**/*.{js,ts,jsx,tsx}'],
+      exclude: [...excludeFiles],
+    },
   },
 });

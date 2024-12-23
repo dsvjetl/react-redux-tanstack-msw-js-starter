@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { HomeExample } from './index';
+import store from '../../store';
+import { Provider } from 'react-redux';
 
 const queryClient = new QueryClient();
 
@@ -8,7 +10,9 @@ describe('HomeExample', () => {
   it('should render', () => {
     render(
       <QueryClientProvider client={queryClient}>
-        <HomeExample />
+        <Provider store={store}>
+          <HomeExample />
+        </Provider>
       </QueryClientProvider>,
     );
 
@@ -18,7 +22,9 @@ describe('HomeExample', () => {
   it('should be in loading state', () => {
     render(
       <QueryClientProvider client={queryClient}>
-        <HomeExample />
+        <Provider store={store}>
+          <HomeExample />
+        </Provider>
       </QueryClientProvider>,
     );
 
