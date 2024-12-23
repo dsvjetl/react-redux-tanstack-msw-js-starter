@@ -2,7 +2,7 @@ import './App.css';
 import { Provider } from 'react-redux';
 import store from './store';
 import { BrowserRouter } from 'react-router-dom';
-import AppRoutes from './routing/Routes';
+import { AppRoutes } from './routing/index';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { HeaderExample } from './shared/components/HeaderExample';

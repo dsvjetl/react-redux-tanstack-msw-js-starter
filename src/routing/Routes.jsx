@@ -1,10 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
-import { HomeExample } from '../views/HomeExample';
+import { HomeExample } from '../views/HomeExample/HomeExample';
+import { routePaths } from './';
 
-export default function AppRoutes() {
+const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomeExample />} />
+      <Route path={routePaths.HOME} element={<HomeExample />} />
     </Routes>
   );
-}
+};
+
+export default AppRoutes;
