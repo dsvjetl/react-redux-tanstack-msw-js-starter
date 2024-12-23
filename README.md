@@ -21,6 +21,7 @@ and production builds.
 - **SASS Embedded** for advanced styling capabilities.
 - Mocking with **MSW** (Mock Service Worker).
 - **Husky** for Git hook management.
+- **Knip** for dependency analysis and dead code detection.
 
 ## Installation
 
@@ -114,6 +115,12 @@ Below are the standard scripts defined in the `package.json`:
   npm run format
   ```
 
+- **Analyze dependencies and dead code with Knip.js:**
+
+  ```bash
+  npm run knip
+  ```
+
 ## Libraries and Tools
 
 | Library/Tool            | Version | Use Case                                  |
@@ -128,6 +135,7 @@ Below are the standard scripts defined in the `package.json`:
 | **SASS Embedded**       | 1.83.0  | Advanced CSS styling                      |
 | **Mock Service Worker** | 2.7.0   | API data mocking for testing              |
 | **Husky**               | 9.1.7   | Git hook management                       |
+| **Knip**                | 5.41.1  | Dependency analysis and dead code check   |
 | **Vite**                | 6.0.3   | Lightning-fast development build tool     |
 
 For a complete list of dependencies, check the `package.json` file.
@@ -154,6 +162,15 @@ npm run plop
 ```
 
 Follow the prompts to auto-generate boilerplate files for the React components.
+
+### Dependency Analysis with Knip.js
+
+Run Knip.js to check for unused dependencies or dead code in the project. This helps to keep the codebase lean and
+clean:
+
+```bash
+npm run knip
+```
 
 ### Mocking Data with MSW
 
