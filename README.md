@@ -133,7 +133,7 @@ Below are the standard scripts defined in the `package.json`:
 - **Analyze dependencies and dead code with Knip.js:**
 
   ```bash
-  npm run knip
+  npm run scan:deadcode
   ```
 
 ## Libraries and Tools
@@ -159,6 +159,35 @@ For a complete list of dependencies, check the `package.json` file.
 
 ## Development Guidelines
 
+### Adding New Features
+
+This project utilizes **Plop.js** to scaffold components. To create a new component, run:
+
+```bash
+npm run generate
+```
+
+Follow the prompts to auto-generate boilerplate files for the React components:
+
+1. Navigate with terminal to the wanted directory.
+
+2. Run the following command:
+
+   ```bash
+   npm run generate
+   ```
+
+3. You will be prompted to provide the following inputs:
+
+   - **Component Name**: Enter the name of your new React component, for example.: `Header`
+
+4. Once the inputs are provided, Plop will generate the boilerplate files for your component in the appropriate
+   directory under `components/<**Component Name**>/`.
+
+5. Review the generated files and customize them as needed.
+
+This ensures quick creation of React components that follow the project's coding standards and directory structure.
+
 ### Linting and Formatting
 
 Run the linting script to check for code issues:
@@ -169,16 +198,6 @@ npm run lint
 
 Prettier is configured to auto-format code on save using your IDE. Ensure that your development setup supports Prettier
 auto-formatting.
-
-### Adding New Features
-
-This project utilizes **Plop.js** to scaffold components. To create a new component, run:
-
-```bash
-npm run generate
-```
-
-Follow the prompts to auto-generate boilerplate files for the React components.
 
 ### Running Tests
 
@@ -202,7 +221,7 @@ Run Knip.js to check for unused dependencies or dead code in the project. This h
 clean:
 
 ```bash
-npm run knip
+npm run scan:deadcode
 ```
 
 ### Mocking Data with MSW
