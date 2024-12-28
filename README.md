@@ -182,7 +182,7 @@ Follow the prompts to auto-generate boilerplate files for the React components:
    - **Component Name**: Enter the name of your new React component, for example.: `Header`
 
 4. Once the inputs are provided, Plop will generate the boilerplate files for your component in the appropriate
-   directory under `components/<**Component Name**>/`.
+   directory under `components/ComponentName/`.
 
 5. Review the generated files and customize them as needed.
 
