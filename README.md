@@ -169,7 +169,7 @@ npm run generate
 
 Follow the prompts to auto-generate boilerplate files for the React components:
 
-1. Navigate with terminal to the wanted directory.
+1. Navigate to the desired directory using the terminal.
 
 2. Run the following command:
 
