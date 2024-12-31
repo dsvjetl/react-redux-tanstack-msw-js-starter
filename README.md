@@ -48,13 +48,20 @@ To set up the project locally, follow these steps:
    npm run prepare
    ```
 
-4. Start the development server:
+4. Copy the environment variables file:
+
+   ```bash
+   cp .env.example .env.local
+   cp .env.example .env.production
+   ```
+
+5. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-5. Open the project in your browser at `http://localhost:5173` (default port for Vite).
+6. Open the project in your browser at `http://localhost:5173` (default port for Vite).
 
 ## Project Structure
 
