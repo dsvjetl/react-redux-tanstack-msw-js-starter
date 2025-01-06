@@ -1,6 +1,7 @@
-import styles from './Todos.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
+
+import styles from './Todos.module.scss';
 import { add } from '../../../../store/todoSlice';
 import { Todo } from '../Todo';
 

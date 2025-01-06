@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import styles from './Todo.module.scss';
 
 const Todo = ({ todo }) => {

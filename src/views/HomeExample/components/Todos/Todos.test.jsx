@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react';
+import { Provider } from 'react-redux';
+
 import { Todos } from './index';
 import store from '../../../../store';
-import { Provider } from 'react-redux';
 
 describe('Todos', () => {
   it('should render', () => {

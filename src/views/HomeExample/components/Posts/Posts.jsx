@@ -1,5 +1,6 @@
-import { isMock } from '../../../../shared/utils/isMock';
 import PropTypes from 'prop-types';
+
+import { isMock } from '../../../../shared/utils/isMock';
 import { Post } from '../Post';
 
 const Posts = ({ posts }) => {

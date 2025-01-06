@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+
 import { HomeExample } from '../views/HomeExample';
 import { routePaths } from './index';
 
