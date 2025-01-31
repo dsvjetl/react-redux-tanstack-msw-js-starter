@@ -8,12 +8,12 @@ and production builds.
 
 ## Requirements
 
-- **Node.js** ~^ v23.x.x
-  - Since the project includes a `.nvmrc` file, it is recommended to use:
+- **Node.js** ~^v23.x.x
+  - If you are using `nvm`, the project includes an `.nvmrc` file, so you can run:
   ```bash
     nvm use
   ```
-- **NPM** ~^ v10.x.x
+- **NPM** ~^v10.x.x
 
 ## Features
 
@@ -41,9 +41,9 @@ To set up the project locally, follow these steps:
    cd <new_project_name>
    ```
 
-   - Or `Use this template` on the GitHub repo page.
+   - Or `Use this template` on the GitHub repository page.
 
-2. Switch to the project Node.js version (optional but **recommended**):
+2. (Optional If you are using `nvm`) Switch to the project Node.js version:
 
    ```bash
    nvm use
@@ -75,6 +75,20 @@ To set up the project locally, follow these steps:
    ```
 
 7. Open the project in your browser at `http://localhost:5173` (default port for Vite).
+
+## Example files - how to handle
+
+**The project uses examples** to showcase to developers how to use them:
+
+- `src/views/HomeExample`
+- `src/shared/components/HeaderExample`
+
+These examples are connected to:
+
+- `src/store/todoSlice.js`
+- `src/routing/Routes.jsx`
+
+**Delete or refactor example files to start the project from scratch.**
 
 ## Project Structure
 
@@ -269,8 +283,8 @@ npm run scan:deadcode
 ### Mocking Data with MSW
 
 This project uses **Mock Service Worker (MSW)** to mock API endpoints during development and testing. MSW ensures
-controlled responses and prevents dependency on actual backend services.
-See the `src/views/HomeExample/mocks/postsMock.js` as an example.
+controlled responses and eliminates dependency on actual backend services.
+See `src/views/HomeExample/mocks/postsMock.js` and `src/mocks/handlers.js` for examples.
 
 ```bash
 npm run dev:mock
