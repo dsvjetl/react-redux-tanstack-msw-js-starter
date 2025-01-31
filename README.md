@@ -76,6 +76,17 @@ To set up the project locally, follow these steps:
 
 7. Open the project in your browser at `http://localhost:5173` (default port for Vite).
 
+## .env files
+
+`.env.example` includes `VITE_API_BASE_URL=https://jsonplaceholder.typicode.com`, which is a dummy endpoint for
+showcasing.
+
+`VITE_API_BASE_URL` should be updated with the desired endpoint URL, and you can add more `.env` variables as long as
+they start with `VITE_API`.
+
+**`VITE_API_MOCK=false` should be present in the `.env` files** so the MSW script `"dev:mock": "VITE_API_MOCK=true vite"`
+can work properly.
+
 ## Example files - how to handle
 
 **The project uses examples** to showcase to developers how to use them:
