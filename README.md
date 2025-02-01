@@ -1,5 +1,8 @@
 # React [Redux / Tanstack Query / Mock Service Worker] JavaScript Starter/Boilerplate
 
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 ## Overview
 
 A modern React starter kit with Redux, Tanstack Query, and Mock Service Worker, optimized for fast development with Vite.
