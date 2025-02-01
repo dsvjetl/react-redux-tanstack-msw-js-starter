@@ -1,5 +1,8 @@
 # React [Redux / Tanstack Query / Mock Service Worker] JavaScript Starter/Boilerplate
 
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 ## Overview
 
 A modern React starter kit with Redux, Tanstack Query, and Mock Service Worker, optimized for fast development with Vite.
@@ -204,6 +207,17 @@ Below are the standard scripts defined in the `package.json`:
   ```bash
   npm run scan:deadcode
   ```
+
+## Husky commit checks
+
+Husky is configured so you can commit only if ESLint and Prettier checks pass.
+
+**Unit tests are not required for Husky checks** because of:
+
+- Faster development cycle
+- Testing can be postponed
+- Encouraging developer autonomy
+- Overhead in small projects
 
 ## Libraries and Tools
 
