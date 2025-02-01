@@ -133,7 +133,7 @@ These examples are connected to:
 ```
 
 Folder structure example:
-![Imgur](https://i.imgur.com/WUzayYx.png)
+![Imgur](https://i.imgur.com/8yEUEUn.png)
 
 ## Scripts
 
